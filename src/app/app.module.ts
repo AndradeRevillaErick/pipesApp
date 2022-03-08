@@ -3,18 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-//PRIME NG
-import { ButtonModule } from 'primeng/button';
-import {CardModule} from 'primeng/card';
+//Modulo personalizado
+import { AppRouterModule } from './app-router.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    AppRouterModule,
     BrowserModule,
-    ButtonModule,
-    CardModule
+    SharedModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
