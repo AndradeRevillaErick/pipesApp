@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MenuItem, PrimeIcons} from 'primeng/api';
+import {MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-menu',
@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
           {
             label: 'textos y fechas',
             icon: 'pi pi-align-left',
-            routerLink: ''
+            routerLink: '/'
           },
           {
             label: 'numeros',
